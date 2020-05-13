@@ -20,12 +20,23 @@ addtodo.addEventListener('submit',e => {
         newtemplate(newtodo);
         addtodo.reset();
     }
+    if (todolists.innerHTML.includes('li')) {
+        document.querySelector('.welcome').innerHTML = `<span> Your todos are listed below.</span>`;
+        } else {
+            document.querySelector('.welcome').innerHTML = `<span> Get started by entering your Todos below.</span>`;
+        }
+    
 });
 
 todolists.addEventListener('click',e => {
     if (e.target.classList.contains('delete')) {
         e.target.parentElement.remove();
     }
+    if (todolists.innerHTML.includes('li')) {
+        document.querySelector('.welcome').innerHTML = `<span> Your todos are listed below.</span>`;
+        } else {
+            document.querySelector('.welcome').innerHTML = `<span> Get started by entering your Todos below.</span>`;
+        }
 });
 
 const searching = (term) => {

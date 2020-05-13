@@ -24,7 +24,6 @@ form {
 
 
 ul {
-    margin: 30px 0px;
     max-width: 500px;
     list-style: none;
     padding: 0;
@@ -77,5 +76,13 @@ p {
     display: none;
 }
 
+.welcome {
+    padding: 20px 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #5b1f94;
+    border-radius: 5px;
+}
 
 
